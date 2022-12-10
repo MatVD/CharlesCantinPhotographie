@@ -1,0 +1,19 @@
+.header {
+  margin: 16px 56px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul {
+  display: flex;
+}
+
+.li {
+  list-style: none;
+  margin-left: 48px
+}
