@@ -3,6 +3,12 @@
   color: white;
 }
 
+.imageContainer {
+  position: relative;
+  width: 72px;
+  height: 72px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -23,6 +29,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .imageContainer {
+    width: 56px;
+    height: 56px;
+  }
   .ul {
     flex-direction: column;
     justify-content: center;

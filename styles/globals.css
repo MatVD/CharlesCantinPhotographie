@@ -11,7 +11,7 @@ body {
 body {
   background: url('../public/photographe.svg') no-repeat;
   background-size: 90%;
-  background-position: left 10%;
+  background-position: left 0;
   background-color: black;
 }
 
@@ -24,14 +24,20 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 1268px) {
   body {
-    background: url('../public/photographe.svg') no-repeat;
-    background-size: 170%;
+    background-size: 130%;
     background-position: right 10% top -20%;
-    background-color: black;
   }
 }
+
+@media screen and (max-width: 868px) {
+  body {
+    background-size: 170%;
+    background-position: right 10% top -20%;
+  }
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   html {

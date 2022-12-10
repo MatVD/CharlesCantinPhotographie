@@ -2,6 +2,8 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
+import Image from "next/image";
+import Logo from "../../public/logo-charles-cantin.png"
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -9,7 +11,15 @@ const Navbar = () => {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} ${navOpen ? styles.show : null}`}>
-        <div>Logo et réseaux</div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={Logo}
+            fill
+            sizes="(max-width: 768px) 56px, 72px"
+            priority
+            alt="Logo"
+          />
+        </div>
         {/* La nav à un style par défaut, au clique styles.show est rajouté */}
           <ul className={styles.ul}>
             <li className={styles.li}>
