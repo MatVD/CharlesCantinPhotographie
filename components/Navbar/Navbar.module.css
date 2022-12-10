@@ -15,5 +15,78 @@
 
 .li {
   list-style: none;
-  margin-left: 48px
+  margin-left: 48px;
+}
+
+.btnBurger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    height: 100vh;
+    padding: 2rem;
+    background-color: black;
+  }
+  .show .ul{
+    width: 100vw;
+    right: 0;
+  }
+  .li {
+    display: block;
+    padding: 1.5rem;
+    font-size: 5vw;
+  }
+  .btnBurger {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: white;
+    z-index: 2;
+  }
+  .btnBurger:hover {
+    cursor: pointer;
+  }
+  .burgerBar,
+  .burgerBar::before,
+  .burgerBar::after {
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: white;
+    transition: all .4s ease-in-out;
+  }
+  .burgerBar::before,
+  .burgerBar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burgerBar::before {
+    transform: translateY(-12px);
+  }
+  .burgerBar::after {
+    transform: translateY(12px);
+  }
+  .show .burgerBar {
+    width: 0;
+    background: transparent;
+  }
+  .show .burgerBar::before {
+    transform: rotate(45deg);
+  }
+  .show .burgerBar::after {
+    transform: rotate(-45deg);
+  }
+
 }
