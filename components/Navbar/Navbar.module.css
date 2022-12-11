@@ -29,10 +29,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .imageContainer {
-    width: 56px;
-    height: 56px;
+  .header {
+    margin: 16px 32px;
   }
+  
   .ul {
     flex-direction: column;
     justify-content: center;

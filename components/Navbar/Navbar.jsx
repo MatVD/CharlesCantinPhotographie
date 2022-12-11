@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/logo-charles-cantin.png"
+import Logo from "../../public/logo-charles-cantin_s.svg"
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,7 +15,6 @@ const Navbar = () => {
           <Image
             src={Logo}
             fill
-            sizes="(max-width: 768px) 56px, 72px"
             priority
             alt="Logo"
           />
