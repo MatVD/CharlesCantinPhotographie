@@ -1,18 +1,24 @@
 .header {
-  margin: 16px 56px;
+  margin: 32px 56px;
   color: white;
-}
-
-.imageContainer {
-  position: relative;
-  width: 72px;
-  height: 72px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  margin-left: 16px;
 }
 
 .ul {

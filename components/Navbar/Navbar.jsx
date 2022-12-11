@@ -3,7 +3,9 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import { useState } from "react";
 import Image from "next/image";
-import Logo from "../../public/logo-charles-cantin_s.svg"
+import Logo from "../../public/logo-charles-cantin.png"
+import Insta from "../../public/Instagram.png";
+import Facebook from "../../public/Facebook.png"
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -14,10 +16,25 @@ const Navbar = () => {
         <div className={styles.imageContainer}>
           <Image
             src={Logo}
-            fill
+            width={76}
+            height={76}
             priority
             alt="Logo"
           />
+          <div className={styles.socialContainer}>
+            <Image
+            src={Facebook}
+            width={32}
+            height={32}
+            alt="Facebook" 
+            />
+            <Image
+            src={Insta}
+            width={32}
+            height={32}
+            alt="Instagram" 
+            />
+          </div>
         </div>
         {/* La nav à un style par défaut, au clique styles.show est rajouté */}
           <ul className={styles.ul}>
