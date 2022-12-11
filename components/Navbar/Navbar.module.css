@@ -30,6 +30,10 @@
   margin-left: 48px;
 }
 
+.linkUnderline{
+  text-decoration: underline #A50104 3px;
+}
+
 .btnBurger {
   display: none;
 }
