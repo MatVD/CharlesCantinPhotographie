@@ -49,7 +49,8 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 className={
-                  router.pathname == `/`
+                  // si path == href alors isActive
+                  router.pathname == link.href
                     ? `${styles.linkUnderline}`
                     : ""
                 }
