@@ -2,10 +2,14 @@
 .wrapperH1 {
   display: inline;
   justify-content: center;
+  align-items: center;
   border: 1px solid white;
   background: #745452;
   padding: 5px;
   margin: 0 56px;
+  position: absolute;
+  top: 42%;
+  translate: calc(-50%, -50%); ;
 }
 
 .h1 {

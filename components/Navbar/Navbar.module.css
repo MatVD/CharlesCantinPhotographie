@@ -1,6 +1,8 @@
 .header {
   margin: 32px 56px;
   color: white;
+  font-family: 'Rufina', serif;
+  font-size: 20px;
 }
 
 .nav {
@@ -13,9 +15,15 @@
   display: flex;
 }
 
+.logoContainer {
+  position: relative;
+  width: 76px;
+  height: 76px;
+}
+
 .socialContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 80px;
   margin-left: 16px;
@@ -23,6 +31,7 @@
 
 .ul {
   display: flex;
+  z-index: 1;
 }
 
 .li {
@@ -42,6 +51,11 @@
   .header {
     margin: 16px 32px;
   }
+
+  .logoContainer {
+    width: 56px;
+    height: 56px;
+  }
   
   .ul {
     flex-direction: column;
@@ -53,10 +67,14 @@
     height: 100vh;
     padding: 2rem;
     background-color: black;
+    transition: right 0.9s ease;
+    
   }
   .show .ul{
     width: 100vw;
     right: 0;
+    z-index: 1;
+    transition: right 0.4s ease;
   }
   .li {
     display: block;

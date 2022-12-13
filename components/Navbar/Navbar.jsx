@@ -37,22 +37,29 @@ const Navbar = () => {
       {/* La nav à un style par défaut, au clique styles.show est rajouté */}
       <nav className={`${styles.nav} ${navOpen ? styles.show : null}`}>
         <div className={styles.imageContainer}>
-          <Image src={Logo} width={76} height={76} priority alt="Logo" />
+          <Link href="/">
+            <div className={styles.logoContainer}>
+              <Image src={Logo} fill priority alt="Logo" />
+            </div>
+          </Link>
           <div className={styles.socialContainer}>
-            <Image src={Facebook} width={32} height={32} alt="Facebook" />
-            <Image src={Insta} width={32} height={32} alt="Instagram" />
+            <Link href="/">
+              <Image src={Facebook} width={24} height={24} alt="Facebook" />
+            </Link>
+            <Link href="/">
+              <Image src={Insta} width={24} height={24} alt="Instagram" />
+            </Link>
           </div>
         </div>
         <ul className={styles.ul}>
           {links.map((link, i) => (
             <li className={styles.li} key={i}>
               <Link
+                onClick={() => setNavOpen(!navOpen)}
                 href={link.href}
                 className={
                   // si path == href alors isActive
-                  router.pathname == link.href
-                    ? `${styles.linkUnderline}`
-                    : ""
+                  router.pathname == link.href ? `${styles.linkUnderline}` : ""
                 }
               >
                 {link.name}

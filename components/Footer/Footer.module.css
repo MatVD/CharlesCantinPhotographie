@@ -1,5 +1,5 @@
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -11,10 +11,17 @@
   background-color: #222222;
   margin: 0;
   padding: 32px 56px;
+  font-family: 'Rufina', serif;
+  font-size: 20px;
+}
+
+.footer p {
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 32px 32px;
+    padding: 16px 32px;
+    font-size: 16px;
   }
 }
