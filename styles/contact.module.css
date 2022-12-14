@@ -1,0 +1,74 @@
+.section {
+  display: flex;
+  justify-content: center;
+  width: 950px;
+  font-family: 'Rufina', serif;
+  font-size: 20px;
+}
+
+.wrapperForm {
+  width: 330px;
+  height: 500px;
+  background-color: #4A555D;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 24px;
+}
+
+.form input,
+.form textarea {
+  background-color: #4A555D;
+  border: none;
+  border-bottom: #c0c2c4;
+  resize: none;
+  padding: 8px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #c0c2c4;
+}
+
+.form button {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 16px;
+}
+
+.formInfos {
+  position: absolute;
+  bottom: 120px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  width: 500px;
+  height: 30px;
+  background-color: rgb(153, 203, 153);
+  border-radius: 5px;
+  color: white;
+}
+
+.adress {
+  text-align: center;
+  height: 140px;
+  width: 330px;
+  color: white;
+  background-color: #4A555D;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 970px) {
+  .adress  {
+    display: none;
+  }
+
+  .section hr {
+    display: none;
+  }
+}

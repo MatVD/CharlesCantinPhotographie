@@ -8,8 +8,6 @@ export const getStaticProps = async () => {
     'images': image.asset->url,
   }`);
 
-  console.log(galeries);
-
   if (!galeries) {
     return {
       notFound: true,
@@ -35,7 +33,9 @@ const galerie = ({ galeries }) => {
               <Image
                 className={styles.images}
                 src={galerie.images}
-                fill
+                width={294}
+                height={197}
+                alt={`Photo de votre ${galerie.title}`}
               />
             </div>
             <div className={styles.textWrapper}>

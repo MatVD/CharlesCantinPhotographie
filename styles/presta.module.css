@@ -1,0 +1,45 @@
+.section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 294px;
+  height: 236px;
+  background-color: #EAEAEA;
+  border-radius: 5px;
+}
+
+.textWrapper {
+  text-align: center;
+  background-color: #4A555D;
+  color: white;
+  font-family: 'Rufina', serif;
+  border-radius: 5px 5px 0 0;
+}
+
+.p {
+  margin: 8px;
+  font-size: 24px;
+}
+
+.descWrapper {
+  padding: 8px;
+}
+
+.descWrapper p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.descWrapper span {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}

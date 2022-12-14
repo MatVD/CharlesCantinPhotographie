@@ -11,8 +11,7 @@ body {
 
 body {
   background: url('../public/photographe.svg') no-repeat;
-  background-size: 90%;
-  background-position: left 0;
+  background-size: 100%;
   background-color: black;
 }
 
@@ -20,7 +19,9 @@ h1 {
   font-family: 'Rufina', serif;
   text-align: center;
   color: white;
-  margin-top: 46px;
+  margin-top: 24px;
+  margin-bottom: 54px;
+  text-transform: uppercase;
 }
 
 a {
@@ -28,17 +29,11 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1268px) {
-  body {
-    background-size: 130%;
-    background-position: right 10% top -20%;
-  }
-}
 
 @media screen and (max-width: 868px) {
   body {
     background-size: 170%;
-    background-position: right 10% top -20%;
+    background-position: left 100% top 20%;
   }
 }
 
