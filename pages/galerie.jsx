@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/galerie.module.css";
 import Filter from "../components/filter/Filter";
 import { useState } from "react";
-import { useEffect } from "react";
 
 export const getStaticProps = async () => {
   const galeries = await client.fetch(`*[_type == 'galerie'] {
@@ -24,7 +23,7 @@ export const getStaticProps = async () => {
   };
 };
 
-const galerie = ({ galeries }) => {
+const Galerie = ({ galeries }) => {
   const [categories, setCategories] = useState(galeries);
 
   // Fonction pour le filtre
@@ -73,4 +72,4 @@ const galerie = ({ galeries }) => {
   );
 };
 
-export default galerie;
+export default Galerie;
