@@ -1,4 +1,5 @@
 import styles from "../styles/contact.module.css";
+import Head from "next/head";
 
 const contact = () => {
   const handleSubmit = async (event) => {

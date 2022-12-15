@@ -1,5 +1,6 @@
 import styles from "../styles/presta.module.css";
 import client from "../lib/client";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const prestas = await client.fetch(`*[_type == 'price-services'] {

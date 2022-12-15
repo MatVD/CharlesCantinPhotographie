@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/galerie.module.css";
 import Filter from "../components/filter/Filter";
 import { useState } from "react";
+import Head from "next/head";
 
 export const getStaticProps = async () => {
   const galeries = await client.fetch(`*[_type == 'galerie'] {
