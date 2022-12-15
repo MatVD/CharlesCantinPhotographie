@@ -18,11 +18,11 @@ Afin de pouvoir déployer en local, il y a des variables d'environnement à réc
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
-                                          Déployement en ligne
+                                           Déployement en ligne
 
 
 L'application est déployer sur Vercel.com. Depuis cette plateforme, il est possible de connecter son projet depuis un repository (Github, gitlab..etc). Une fois le repo connecté, il y a quelques paramètres à remplir comme l'ajout des variables d'environnements par exemple. Ensuite, si le build est finalisé avec succès, l'application est disponible en https (donc avec SSL) depuis un sous-domaine .vercel.app.
 
 Adresse de l'application :
-https://charles-cantin-photographie.vercel.app/galerie
+https://charles-cantin-photographie.vercel.app
 
