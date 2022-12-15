@@ -4,6 +4,10 @@ const contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    // Toast info
+    const formInfo = document.getElementById("formInfos");
+    formInfo.innerText = ""
+
     // Récupération data du formulaire
     const data = {
       name: event.target.name.value,
@@ -27,14 +31,15 @@ const contact = () => {
       event.target.name.value = "";
       event.target.email.value = "";
       event.target.message.value = "";
-      const formInfo = document.getElementById('formInfos')
       formInfo.style.display = "flex";
-      formInfo.append('Message envoyé')
+      formInfo.append("Message envoyé");
       setTimeout(() => {
         formInfo.style.display = "none";
-      }, 7000)
+      }, 7000);
     }
-
+    
+    
+    
     const result = await response.json();
   };
 
@@ -49,10 +54,15 @@ const contact = () => {
             <input type="text" id="name" required />
 
             <label htmlFor="email">Email</label>
-            <input type="email" id="email" required />
+            <input
+              type="email"
+              id="email"
+              pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
+              required
+            />
 
             <label htmlFor="message">Message</label>
-            <textarea type="text" id="message" required rows={12} />
+            <textarea type="text" id="message" required rows={9} />
 
             <button type="submit">Envoyer</button>
           </form>

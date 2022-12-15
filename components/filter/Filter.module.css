@@ -1,0 +1,9 @@
+.wrapperFilter select {
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}

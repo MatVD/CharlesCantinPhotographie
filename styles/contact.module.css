@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   width: 950px;
-  font-family: 'Rufina', serif;
+  font-family: "Rufina", serif;
   font-size: 20px;
 }
 
 .wrapperForm {
   width: 330px;
-  height: 500px;
-  background-color: #4A555D;
+  height: 450px;
+  background-color: #4a555d;
   border-radius: 5px;
 }
 
@@ -22,7 +22,7 @@
 
 .form input,
 .form textarea {
-  background-color: #4A555D;
+  background-color: #4a555d;
   border: none;
   border-bottom: #c0c2c4;
   resize: none;
@@ -46,7 +46,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  width: 500px;
+  width: 400px;
   height: 30px;
   background-color: rgb(153, 203, 153);
   border-radius: 5px;
@@ -58,17 +58,33 @@
   height: 140px;
   width: 330px;
   color: white;
-  background-color: #4A555D;
-  padding: 16px;
+  background-color: #4a555d;
+  padding: 1px;
   border-radius: 5px;
 }
 
 @media screen and (max-width: 970px) {
-  .adress  {
-    display: none;
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
   }
-
+  .wrapperForm {
+    width: 70vw;
+    max-width: 330px;
+  }
   .section hr {
-    display: none;
+    margin-top: 58px;
+    width: 140px;
+  }
+  .adress {
+    margin-top: 58px;
+    width: 70vw;
+    max-width: 330px;
+  }
+  .formInfos {
+    bottom: 120px;
+    width: 200px;
   }
 }

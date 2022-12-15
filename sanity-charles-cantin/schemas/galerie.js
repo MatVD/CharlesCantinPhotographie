@@ -10,8 +10,11 @@ export default {
     },
     {
       name: 'image',
-      type: 'image',
       title: 'Photo',
+      type: 'array',
+      of: [{
+        type: "image",
+      }],
       option: {
         hotspot: true
       }

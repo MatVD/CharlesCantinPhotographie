@@ -1,19 +1,13 @@
 export default function handler(req, res) {
-  // Get data submitted in request's body.
+  // Reception des données du contact form.
   const body = req.body
 
-  // Optional logging to see the responses
-  // in the command line where next.js app is running.
-  console.log('body: ', body)
-
-  // Guard clause checks for first and last name,
-  // and returns early if they are not found
+  // Vérification de la présence du nom et du mail
   if (!body.name || !body.email) {
-    // Sends a HTTP bad request error code
-    return res.status(400).json({ data: 'First or last name not found' })
+    // Si non présent, erreur 400
+    return res.status(400).json({ data: "Le nom ou l'email n'ont pas été trouvé"})
   }
 
-  // Found the name.
-  // Sends a HTTP success code
+  // Le nom et l'email ont été trouvé
   res.status(200).json({ data: `${body.name} ${body.email}` })
 }
