@@ -29,12 +29,12 @@ const Galerie = ({ galeries }) => {
   // Fonction pour le filtre
   const handleChange = (e) => {
     // Reset de l'ensemble des categories
-    const categories = galeries
+    const categories = galeries;
 
     // Si l'utilisateur clique sur Filtre ou Toutes les catégories, tout est affiché
-    if(e.target.value === 'Tous' || e.target.value === 'filtre') {
-      setCategories(categories)
-      return
+    if (e.target.value === "Tous" || e.target.value === "filtre") {
+      setCategories(categories);
+      return;
     }
 
     // Filtre
@@ -46,10 +46,17 @@ const Galerie = ({ galeries }) => {
 
   return (
     <>
+      <Head>
+        <title>Galerie - Charles Cantin - Photographe</title>
+        <meta
+          name="description"
+          content="Bienvenue dans ma galerie. Prenez le temps de regarder mon travail et d'utiliser le filtre afin de rapidement trouver ce qui vous intéresse"
+        />
+      </Head>
+
       <h1>Galerie</h1>
 
       <section className={styles.section}>
-
         <Filter onChange={(e) => handleChange(e)} />
 
         <div className={styles.wrapperGalerie}>

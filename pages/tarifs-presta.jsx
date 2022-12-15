@@ -24,6 +24,14 @@ export const getStaticProps = async () => {
 const tarifsPresta = ({ prestas }) => {
   return (
     <>
+      <Head>
+        <title>Tarifs et prestations - Charles Cantin - Photographe</title>
+        <meta
+          name="description"
+          content="Sur cette page, retrouvez mes prestations et tarifs associés. Pour des commandes plus spécifiques, je serais ravis de pouvoir y répondre alors n'ésitez pas à me contacter"
+        />
+      </Head>
+
       <h1>Tarifs et prestations</h1>
 
       <section className={styles.section}>

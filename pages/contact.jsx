@@ -6,7 +6,7 @@ const contact = () => {
 
     // Toast info
     const formInfo = document.getElementById("formInfos");
-    formInfo.innerText = ""
+    formInfo.innerText = "";
 
     // Récupération data du formulaire
     const data = {
@@ -37,14 +37,20 @@ const contact = () => {
         formInfo.style.display = "none";
       }, 7000);
     }
-    
-    
-    
+
     const result = await response.json();
   };
 
   return (
     <>
+      <Head>
+        <title>Contact - Charles Cantin - Photographe</title>
+        <meta
+          name="description"
+          content="Bienvenue sur ma page de contact. Je vous répondrais très rapidement"
+        />
+      </Head>
+
       <h1>Contact</h1>
 
       <section className={styles.section}>
